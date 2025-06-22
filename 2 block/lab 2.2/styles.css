@@ -1,0 +1,83 @@
+.calculator {
+  width: 320px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+#display {
+  width: 94%;
+  height: 60px;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+#display:focus {
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  color: #333;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background-color: #e0e0e0;
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.equals {
+  background-color: #4caf50;
+  color: white;
+}
+
+.equals:hover {
+  background-color: #45a049;
+}
+
+.clear {
+  background-color: #f44336;
+  color: white;
+}
+
+.clear:hover {
+  background-color: #da190b;
+}
+
+.operator {
+  background-color: #ff9800;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #f57c00;
+}
